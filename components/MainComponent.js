@@ -170,9 +170,10 @@ const MainNavigator = createDrawerNavigator(
         Contact: { 
             screen: ContactNavigator,
             navigationOptions: {
+                drawerLabel: 'Contact Us',
                 drawerIcon: ({tintColor}) => (
                     <Icon
-                        name='home'
+                        name='address-card'
                         type='font-awesome'
                         size={24}
                         color={tintColor}
