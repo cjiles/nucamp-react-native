@@ -200,7 +200,7 @@ const MainNavigator = createDrawerNavigator(
 );
 
 class Main extends Component {
-    compoundDidMount() {
+    componentDidMount() {
         this.props.fetchCampsites();
         this.props.fetchComments();
         this.props.fetchPromotions();
