@@ -7,6 +7,10 @@ export const favorites = (state = [], action) => {
                 return state;
             }
             return state.concat(action.payload);
+        
+        case ActionTypes.DELETE_FAVORITE:
+            return state.filter(favorite => favorite !== action.payload);
+            //returns the campsites that do not match the campsiteId in they payload
 
         default:
             return state;
