@@ -55,14 +55,14 @@ class Favorites extends Component {
 
             return (
                 <Swipeout right={rightButton} autoClose={true}>
-                    <Animatable.View animation='fadeInRightBig' duration={2000}>
+                    {/* <Animatable.View animation='fadeInRightBig' duration={2000}> */}
                         <ListItem 
                             title={item.name}
                             subtitle={item.desription}
                             leftAvatar={{source: {uri: baseUrl + item.image}}}
                             onPress={() => navigate('CampsiteInfo', {campsiteId: item.id})}
                         />
-                    </Animatable.View>
+                    {/* </Animatable.View> */}
                  </Swipeout>
             );
         };
