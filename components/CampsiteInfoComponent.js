@@ -24,7 +24,6 @@ const shareCampsite = (title, message, url) => {
         title: title,
         message: `${title}: ${message} ${url}`,
         url: url
-
     },{
         dialogTitle: 'Share ' + title
     });
